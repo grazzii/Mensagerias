@@ -1,4 +1,4 @@
-/* Reset completo para remover margens e preenchimentos padrão */
+/* Reset completo para remover margens e preenchamentos padrão */
 * {
   margin: 0;
   padding: 0;
@@ -11,80 +11,96 @@ html, body {
 
 /* Estilos para o cabeçalho */
 .custom-header {
-  background-color: #ff6200; /* Fundo laranja */
-  padding: 5px 20px; /* Reduz o padding vertical para diminuir a altura */
+  background-color: #EC7000; /* Fundo laranja */
+  padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espaça logotipos entre as extremidades */
+  justify-content: center;
+  border-radius: 0 0 20px 20px; /* Arredonda a parte inferior do Header */
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
-  max-width: 80px; /* Ajuste o tamanho do logotipo conforme necessário */
+.header-logo-center {
+  width: 300px; /* Tamanho grande para Transformers.png */
+  height: auto;
 }
 
 /* Estilos para o rodapé */
 .custom-footer {
-  background-color: #ff6200; /* Fundo laranja */
-  padding: 5px 0; /* Reduz o padding vertical para diminuir a altura */
+  background-color: #EC7000;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo */
+  align-items: center;
+  border-radius: 20px 20px 0 0; /* Arredonda a parte superior do Footer */
+}
+
+.footer-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer-logo-left {
+  width: 80px; /* Ajuste o tamanho do LogoRede.png */
+  height: auto;
 }
 
-.footer-logo {
-  width: 200px; /* Reduz o tamanho do logotipo no rodapé */
-  height: auto; /* Mantém a proporção do logotipo */
+.footer-logo-right {
+  width: 120px; /* Ajuste o tamanho do Laranjinha.png */
+  height: auto;
 }
 
+/* Estilos para o conteúdo principal */
 .main-content {
   padding: 20px;
   display: flex;
-  justify-content: center; /* Centraliza os elementos horizontalmente */
-  align-items: center; /* Centraliza os elementos verticalmente */
-  flex-direction: row; /* Garante que o texto e o mockup fiquem lado a lado */
-  text-align: center; /* Centraliza o texto dentro do contêiner de texto */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
 }
 
 .mockup-video-wrapper {
   display: flex;
   align-items: center;
-  gap: 20px; /* Espaçamento entre o texto e o mockup */
+  gap: 20px;
 }
 
 .mockup-container {
   position: relative;
   width: 100%;
-  max-width: 350px; /* Largura do mockup */
+  max-width: 350px;
 }
 
 .mockup-image {
   width: 100%;
   display: block;
-  border-radius: 15px; /* Bordas arredondadas para o mockup */
+  border-radius: 15px;
 }
 
 .overlay-video {
   position: absolute;
-  top: 50%; /* Centraliza verticalmente */
-  left: 50%; /* Centraliza horizontalmente */
-  width: 87%; /* Ajusta a largura para preencher quase todo o mockup */
-  height: 90%; /* Ajusta a altura para preencher quase todo o mockup */
-  transform: translate(-50%, -50%); /* Move o vídeo para o centro exato */
-  object-fit: cover; /* Cobre toda a área disponível sem distorcer */
+  top: 50%;
+  left: 50%;
+  width: 87%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
   opacity: 0.8;
-  border-radius: 20px; /* Bordas arredondadas para o vídeo */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para o vídeo */
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação de entrada para o texto */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Texto ao lado do Mockup e Vídeo */
@@ -92,27 +108,31 @@ html, body {
   display: flex;
   align-items: center;
   text-align: left;
-  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+  justify-content: flex-start;
 }
 
 .text-container h2 {
-  font-size: 2rem; /* Tamanho maior para destaque */
-  font-weight: 600; /* Peso equilibrado */
-  color: #2c3e50; /* Cinza-azulado moderno */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
   margin: 0;
-  padding: 15px 25px; /* Mais espaçamento para uma aparência espaçada */
-  border-left: 6px solid #000D2A; /* Barra de destaque laranja */
-  background-color: #f1f5f9; /* Fundo suave para contraste */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15); /* Sombra suave para profundidade */
-  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; /* Fonte moderna */
-  letter-spacing: 0.5px; /* Espaçamento entre letras */
-  line-height: 1.6; /* Espaçamento entre linhas */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave para hover */
+  padding: 15px 25px;
+  border-left: 6px solid #ff6600;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  animation: fadeInUp 1s ease forwards; /* Aplica animação de entrada */
 }
 
+/* Efeito de hover no texto */
 .text-container h2:hover {
-  transform: translateY(-2px); /* Elevação sutil ao passar o mouse */
-  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
-  background-color: #e9eff5; /* Fundo ligeiramente mais escuro no hover */
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+  background-color: #e9eff5;
+  color: #ff6600;
+  border-left-color: #2c3e50; /* Altera a cor da borda esquerda no hover */
 }

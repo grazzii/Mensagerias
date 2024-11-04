@@ -4,11 +4,9 @@ import './App.css';
 function Header() {
   return (
     <header className="custom-header">
-      <div className="header-content">
-        <img src="LogoRede.png" alt="Logo Rede" className="header-logo" />
-      </div>
-      <div className="header-content">
-        <img src="Itau.png" alt="Logo Itaú" className="header-logo" />
+      <div className="header-content-center">
+        {/* Transformers.png centralizado e aumentado */}
+        <img src="Transformers.png" alt="Transformers Logo" className="header-logo header-logo-center" />
       </div>
     </header>
   );
@@ -17,8 +15,14 @@ function Header() {
 function Footer() {
   return (
     <footer className="custom-footer">
-      <div className="footer-content">
-        <img src="Transformers.png" alt="Transformers Logo" className="footer-logo" />
+      <div className="footer-logo-container">
+        {/* Link para https://www.userede.com.br/ ao clicar no LogoRede e no Laranjinha */}
+        <a href="https://www.userede.com.br/" target="_blank" rel="noopener noreferrer">
+          <img src="LogoRede.png" alt="Logo Rede" className="footer-logo-left" />
+        </a>
+        <a href="https://www.userede.com.br/" target="_blank" rel="noopener noreferrer">
+          <img src="Laranjinha.png" alt="Laranjinha Logo" className="footer-logo-right" />
+        </a>
       </div>
     </footer>
   );
@@ -30,12 +34,10 @@ function App() {
       <Header />
       <main className="main-content">
         <div className="mockup-video-wrapper">
-          {/* Mockup com vídeo sobreposto */}
           <div className="mockup-container">
             <img src="Mockup.png" alt="Mockup" className="mockup-image" />
             <video className="overlay-video" src="Mensagerias.mp4" autoPlay loop muted></video>
           </div>
-          {/* Texto ao lado do Mockup e Vídeo */}
           <div className="text-container">
             <h2>
               Tracking de Bobinas:<br />Mensageria para cada Evento
