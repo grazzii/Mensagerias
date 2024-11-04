@@ -66,30 +66,33 @@ html, body {
   gap: 20px;
 }
 
+
 .mockup-container {
   position: relative;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px; /* Define o tamanho máximo do mockup */
+  height: auto;
 }
 
 .mockup-image {
   width: 100%;
   display: block;
-  border-radius: 15px;
+  border-radius: 20px; /* Certifique-se de que o raio de borda do mockup e do vídeo sejam iguais */
 }
 
 .overlay-video {
   position: absolute;
-  top: 50%;
+  top: 50%; /* Move o vídeo um pouco para cima para alongar a parte superior */
   left: 50%;
-  width: 87%;
-  height: 90%;
+  width: 90%; /* Mantém a largura igual */
+  height: 95%; /* Aumenta apenas a altura para alongar a parte superior */
   transform: translate(-50%, -50%);
   object-fit: cover;
   opacity: 0.8;
-  border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
 }
+
+
 
 /* Animação de entrada para o texto */
 @keyframes fadeInUp {
