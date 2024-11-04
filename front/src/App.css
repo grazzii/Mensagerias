@@ -1,0 +1,120 @@
+/* Reset completo para remover margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Estilos para o cabeçalho */
+.custom-header {
+  background-color: #ff6200; /* Fundo laranja */
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  max-width: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
+}
+
+/* Estilos para o rodapé */
+.custom-footer {
+  background-color: #ff6200; /* Fundo laranja */
+  padding: 2px 0; /* Reduz significativamente o padding */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo */
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 300px; /* Mantém o logotipo grande */
+  height: auto; /* Mantém a proporção do logotipo */
+}
+
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  flex-direction: row; /* Garante que o texto e o mockup fiquem lado a lado */
+  text-align: center; /* Centraliza o texto dentro do contêiner de texto */
+}
+
+.mockup-video-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre o texto e o mockup */
+}
+
+
+.mockup-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px; /* Largura do mockup */
+}
+
+.mockup-image {
+  width: 100%;
+  display: block;
+  border-radius: 15px; /* Bordas arredondadas para o mockup */
+}
+
+.overlay-video {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  width: 87%; /* Ajusta a largura para preencher quase todo o mockup */
+  height: 90%; /* Ajusta a altura para preencher quase todo o mockup */
+  transform: translate(-50%, -50%); /* Move o vídeo para o centro exato */
+  object-fit: cover; /* Cobre toda a área disponível sem distorcer */
+  opacity: 0.8;
+  border-radius: 20px; /* Bordas arredondadas para o vídeo */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para o vídeo */
+}
+
+/* Texto ao lado do Mockup e Vídeo */
+.text-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+}
+
+.text-container h2 {
+  font-size: 2rem; /* Tamanho maior para destaque */
+  font-weight: 600; /* Peso equilibrado */
+  color: #2c3e50; /* Cinza-azulado moderno */
+  margin: 0;
+  padding: 15px 25px; /* Mais espaçamento para uma aparência espaçada */
+  border-left: 6px solid #000D2A; /* Barra de destaque laranja */
+  background-color: #f1f5f9; /* Fundo suave para contraste */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15); /* Sombra suave para profundidade */
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; /* Fonte moderna */
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave para hover */
+}
+
+.text-container h2:hover {
+  transform: translateY(-2px); /* Elevação sutil ao passar o mouse */
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+  background-color: #e9eff5; /* Fundo ligeiramente mais escuro no hover */
+}

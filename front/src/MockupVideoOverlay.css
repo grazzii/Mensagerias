@@ -1,0 +1,48 @@
+/* MockupVideoOverlay.css */
+.mockup-video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre o texto e o mockup */
+  }
+  
+  .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o texto ao lado esquerdo */
+    text-align: left;
+  }
+  
+  .text-container h2 {
+    font-size: 1.8rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 10px; /* Espaçamento interno para o texto */
+    border-left: 5px solid #ff6200; /* Barra de destaque com cor #ff6200 */
+  }
+  
+  .mockup-container {
+    position: relative;
+    width: 100%;
+    max-width: 380px; /* Reduz um pouco o tamanho máximo do mockup */
+  }
+  
+  .mockup-image {
+    width: 100%;
+    display: block;
+    border-radius: 15px; /* Bordas arredondadas para o mockup */
+  }
+  
+  .overlay-video {
+    position: absolute;
+    top: 5%; /* Centraliza verticalmente o vídeo dentro do mockup */
+    left: 5%; /* Centraliza horizontalmente o vídeo dentro do mockup */
+    width: 85%; /* Reduz a largura do vídeo para ocupar 85% do mockup */
+    height: 90%; /* Mantém a altura do vídeo */
+    object-fit: cover;
+    opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+    border-radius: 15px; /* Bordas arredondadas para o vídeo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao vídeo */
+  }
+  

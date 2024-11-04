@@ -1,0 +1,50 @@
+/* Reset completo para remover margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Estilos para o cabeçalho */
+.custom-header {
+  background-color: #ff6200; /* Fundo laranja */
+  padding: 15px 0; /* Altura igual ao rodapé */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Conteúdo do cabeçalho */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  max-width: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
+}
+
+/* Estilos para o rodapé */
+.custom-footer {
+  background-color: #ff6200; /* Fundo laranja */
+  padding: 15px 0; /* Altura igual ao cabeçalho */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo */
+  align-items: center;
+}
+
+/* Conteúdo do rodapé */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  max-width: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
+}
