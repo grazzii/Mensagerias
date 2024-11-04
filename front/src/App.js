@@ -7,6 +7,9 @@ function Header() {
       <div className="header-content">
         <img src="LogoRede.png" alt="Logo Rede" className="header-logo" />
       </div>
+      <div className="header-content">
+        <img src="Itau.png" alt="Logo Itaú" className="header-logo" />
+      </div>
     </header>
   );
 }
@@ -34,7 +37,9 @@ function App() {
           </div>
           {/* Texto ao lado do Mockup e Vídeo */}
           <div className="text-container">
-            <h2>Tracking de Bobinas: Mensageria de Eventos</h2>
+            <h2>
+              Tracking de Bobinas:<br />Mensageria para cada Evento
+            </h2>
           </div>
         </div>
       </main>

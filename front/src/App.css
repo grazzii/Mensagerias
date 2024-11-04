@@ -12,10 +12,10 @@ html, body {
 /* Estilos para o cabeçalho */
 .custom-header {
   background-color: #ff6200; /* Fundo laranja */
-  padding: 15px 20px;
+  padding: 5px 20px; /* Reduz o padding vertical para diminuir a altura */
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza o conteúdo */
+  justify-content: space-between; /* Espaça logotipos entre as extremidades */
 }
 
 .header-content {
@@ -24,13 +24,13 @@ html, body {
 }
 
 .header-logo {
-  max-width: 120px; /* Ajuste o tamanho do logotipo conforme necessário */
+  max-width: 80px; /* Ajuste o tamanho do logotipo conforme necessário */
 }
 
 /* Estilos para o rodapé */
 .custom-footer {
   background-color: #ff6200; /* Fundo laranja */
-  padding: 2px 0; /* Reduz significativamente o padding */
+  padding: 5px 0; /* Reduz o padding vertical para diminuir a altura */
   display: flex;
   justify-content: center; /* Centraliza o conteúdo */
   align-items: center;
@@ -43,10 +43,9 @@ html, body {
 }
 
 .footer-logo {
-  width: 300px; /* Mantém o logotipo grande */
+  width: 200px; /* Reduz o tamanho do logotipo no rodapé */
   height: auto; /* Mantém a proporção do logotipo */
 }
-
 
 .main-content {
   padding: 20px;
@@ -62,7 +61,6 @@ html, body {
   align-items: center;
   gap: 20px; /* Espaçamento entre o texto e o mockup */
 }
-
 
 .mockup-container {
   position: relative;
