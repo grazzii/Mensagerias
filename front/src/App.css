@@ -117,7 +117,7 @@ html, body {
   color: #2c3e50;
   margin: 0;
   padding: 15px 25px;
-  border-left: 6px solid #ff6600;
+  border-left: 6px solid #ff6200;
   background-color: #f1f5f9;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
@@ -133,7 +133,7 @@ html, body {
   transform: translateY(-4px) scale(1.05);
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
   background-color: #e9eff5;
-  color: #ff6600;
+  color: #ff6200;
   border-left-color: #2c3e50;
 }
 
@@ -251,7 +251,7 @@ html, body {
 }
 
 .tracking-text:hover h2 {
-  color: #ff6600;
+  color: #ff6200;
   background: none;
   text-shadow: 4px 4px 10px rgba(236, 112, 0, 0.4);
 }
