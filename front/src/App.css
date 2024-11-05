@@ -11,16 +11,16 @@ html, body {
 
 /* Estilos para o cabeçalho */
 .custom-header {
-  background-color: #EC7000; /* Fundo laranja */
+  background-color: #EC7000;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0 0 20px 20px; /* Arredonda a parte inferior do Header */
+  border-radius: 0 0 20px 20px;
 }
 
 .header-logo-center {
-  width: 300px; /* Tamanho grande para Transformers.png */
+  width: 300px;
   height: auto;
 }
 
@@ -30,7 +30,7 @@ html, body {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  border-radius: 20px 20px 0 0; /* Arredonda a parte superior do Footer */
+  border-radius: 20px 20px 0 0;
 }
 
 .footer-logo-container {
@@ -41,12 +41,12 @@ html, body {
 }
 
 .footer-logo-left {
-  width: 80px; /* Ajuste o tamanho do LogoRede.png */
+  width: 80px;
   height: auto;
 }
 
 .footer-logo-right {
-  width: 120px; /* Ajuste o tamanho do Laranjinha.png */
+  width: 120px;
   height: auto;
 }
 
@@ -66,33 +66,30 @@ html, body {
   gap: 20px;
 }
 
-
 .mockup-container {
   position: relative;
   width: 100%;
-  max-width: 300px; /* Define o tamanho máximo do mockup */
+  max-width: 300px;
   height: auto;
 }
 
 .mockup-image {
   width: 100%;
   display: block;
-  border-radius: 20px; /* Certifique-se de que o raio de borda do mockup e do vídeo sejam iguais */
+  border-radius: 20px;
 }
 
 .overlay-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%; /* Mantém a largura */
-  height: 95%; /* Aumenta apenas a altura */
+  width: 90%;
+  height: 95%;
   transform: translate(-50%, -50%);
   object-fit: cover;
   opacity: 0.8;
-  border-radius: 20px 20px 40px 40px; /* Define um arredondamento maior para a parte inferior */
+  border-radius: 20px 20px 40px 40px;
 }
-
-
 
 /* Animação de entrada para o texto */
 @keyframes fadeInUp {
@@ -128,7 +125,7 @@ html, body {
   letter-spacing: 0.5px;
   line-height: 1.6;
   transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-  animation: fadeInUp 1s ease forwards; /* Aplica animação de entrada */
+  animation: fadeInUp 1s ease forwards;
 }
 
 /* Efeito de hover no texto */
@@ -137,5 +134,52 @@ html, body {
   box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
   background-color: #e9eff5;
   color: #ff6600;
-  border-left-color: #2c3e50; /* Altera a cor da borda esquerda no hover */
+  border-left-color: #2c3e50;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-logo-center {
+    width: 200px; /* Reduz o tamanho da imagem no cabeçalho */
+  }
+
+  .footer-logo-left,
+  .footer-logo-right {
+    width: 60px; /* Reduz o tamanho das imagens no rodapé */
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+
+  .mockup-container {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h2 {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+  }
+
+  .header-logo-center {
+    width: 150px;
+  }
+
+  .footer-logo-left,
+  .footer-logo-right {
+    width: 50px;
+  }
+
+  .mockup-video-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
