@@ -70,7 +70,7 @@ html, body {
 .mockup-container {
   position: relative;
   width: 100%;
-  max-width: 400px; /* Define o tamanho máximo do mockup */
+  max-width: 300px; /* Define o tamanho máximo do mockup */
   height: auto;
 }
 
@@ -82,14 +82,14 @@ html, body {
 
 .overlay-video {
   position: absolute;
-  top: 50%; /* Move o vídeo um pouco para cima para alongar a parte superior */
+  top: 50%;
   left: 50%;
-  width: 90%; /* Mantém a largura igual */
-  height: 95%; /* Aumenta apenas a altura para alongar a parte superior */
+  width: 90%; /* Mantém a largura */
+  height: 95%; /* Aumenta apenas a altura */
   transform: translate(-50%, -50%);
   object-fit: cover;
   opacity: 0.8;
-  border-radius: 50px;
+  border-radius: 20px 20px 40px 40px; /* Define um arredondamento maior para a parte inferior */
 }
 
 
