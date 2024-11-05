@@ -40,7 +40,7 @@ function App() {
           </div>
           <div className="text-container">
             <h2>
-              Tracking de Bobinas:<br />Mensageria para cada Evento
+              Tracking de Bobinas:<br />Mensageria automática para cada Evento
             </h2>
           </div>
         </div>
