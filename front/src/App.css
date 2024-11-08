@@ -79,17 +79,22 @@ html, body {
   border-radius: 20px;
 }
 
+
 .overlay-video {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 90%;
+  left: 50%; /* Ajuste conforme necessário para centralizar após reduzir a largura */
+  width: 91%; /* Ajuste o valor para cortar o lado direito */
   height: 95%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.99); 
   object-fit: cover;
   opacity: 0.8;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
 }
+
+
+
+
 
 /* Animação de entrada para o texto */
 @keyframes fadeInUp {
